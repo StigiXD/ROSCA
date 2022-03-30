@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src='assets/scatterjs-core.min.js'></script>
+    <script src='assets/scatterjs-plugin-eosjs.min.js'></script>
+    <script src='assets/eosjs-api.js'></script>
+    <script src='assets/eosjs-jsonrpc.js'></script>
+    <script src='index.js'></script>
+    
+</head>
+<h2>UR username: </h2>
+<h1 id="status">Not logged in</h1>
+<body>
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+    <button onclick="unregister()">Unregister</button>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        
+        setStatus();
+        setInterval(() => {
+            setStatus();
+        },50);
+
+        window.logout = () => {
+            ScatterJS.logout();
+        }
+
+        window.login = () => {
+            ScatterJS.login();
+        }
+    </script>
+
+</body>
+
+</html>

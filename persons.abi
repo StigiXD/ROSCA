@@ -1,0 +1,132 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "contribute",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "group_ID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "amt",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "erase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "join",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "groups",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "contributed_total",
+                    "type": "uint64"
+                },
+                {
+                    "name": "received_total",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "person",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "groups",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "contributed_total",
+                    "type": "uint64"
+                },
+                {
+                    "name": "received_total",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "reward",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "group_ID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "amt",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "contribute",
+            "type": "contribute",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "erase",
+            "type": "erase",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "join",
+            "type": "join",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "reward",
+            "type": "reward",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "people",
+            "type": "person",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
